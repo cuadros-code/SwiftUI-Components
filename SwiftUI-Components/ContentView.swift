@@ -11,12 +11,20 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink("Pull to refresh") {
+                NavigationLink {
                     PullToRefresh()
+                } label: {
+                    Image(systemName: "arrow.clockwise")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.blue)
+                    Text("Pull to refresh")
                 }
+                
             }
             .navigationTitle("SwiftUI Components")
         }
+        
         
     }
 }

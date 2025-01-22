@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 extension Color {
     static func random() -> Color {
@@ -27,16 +28,26 @@ struct PullToRefresh: View {
         RowStyle(color: .red),
         RowStyle(color: .blue)
     ]
+    @State private var showCode = false
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(listColors, id: \.color) { item in
                     HStack {}
-                    .listRowBackground(item.color)
+                        .listRowBackground(item.color)
                 }
             }
-            .navigationTitle("Pull and Refresh")
+            
+            .sheet(isPresented: $showCode) {
+                WebView(url: "https://github.com/cuadros-code/SwiftUI-Components/blob/main/SwiftUI-Components/Components/PullToRefresh.swift")
+            }
+            .navigationTitle("Pull to Refresh")
+            .toolbar {
+                Button("Code") {
+                    showCode.toggle()
+                }
+            }
             .refreshable {
                 await refreshAction()
             }
@@ -57,3 +68,6 @@ struct PullToRefresh: View {
 #Preview {
     PullToRefresh()
 }
+
+
+
