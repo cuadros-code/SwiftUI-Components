@@ -4,19 +4,7 @@
 //
 //  Created by Kevin Cuadros on 21/01/25.
 //
-
 import SwiftUI
-import WebKit
-
-extension Color {
-    static func random() -> Color {
-        Color(
-            red: .random(in: 0...1),
-            green: .random(in: 0...1),
-            blue: .random(in: 0...1)
-        )
-    }
-}
 
 struct RowStyle {
     var color: Color
@@ -25,8 +13,7 @@ struct RowStyle {
 struct PullToRefresh: View {
     
     @State private var listColors: [RowStyle] = [
-        RowStyle(color: .red),
-        RowStyle(color: .blue)
+        RowStyle(color: .red)
     ]
     @State private var showCode = false
     
