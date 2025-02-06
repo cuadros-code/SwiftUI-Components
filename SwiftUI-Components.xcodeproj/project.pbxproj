@@ -10,9 +10,22 @@
 		1B536AF82D40923E008831FD /* SwiftUI-Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Components.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1B3E9A542D55124200275B13 /* Exceptions for "SwiftUI-Components" folder in "SwiftUI-Components" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1B536AF72D40923E008831FD /* SwiftUI-Components */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1B536AFA2D40923E008831FD /* SwiftUI-Components */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1B3E9A542D55124200275B13 /* Exceptions for "SwiftUI-Components" folder in "SwiftUI-Components" target */,
+			);
 			path = "SwiftUI-Components";
 			sourceTree = "<group>";
 		};
@@ -255,6 +268,8 @@
 				DEVELOPMENT_TEAM = QNTWKHT726;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Components/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Require usar Face ID para autenticar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +299,8 @@
 				DEVELOPMENT_TEAM = QNTWKHT726;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Components/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Require usar Face ID para autenticar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

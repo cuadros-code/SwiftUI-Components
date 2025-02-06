@@ -30,6 +30,19 @@ struct ContentView: View {
                             .foregroundStyle(.blue)
                         Text("Context Menu")
                     }
+                    
+                }
+                
+                Section("Functions") {
+                    NavigationLink {
+                        FaceIDView()
+                    } label: {
+                        Image(systemName: "faceid")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.blue)
+                        Text("Face id")
+                    }
                 }
             }
             .navigationTitle("SwiftUI Components")
